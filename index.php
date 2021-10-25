@@ -61,6 +61,7 @@ if($arretsuivant1==5){
 <body class=<?php echo $classbody; ?>>
     <p class="direction"><?php echo $stops[5];?></p>
     <p class="stop1"><a href="stop.php" class="stoplien"><?php echo $stops[$arretsuivant1]; ?></a></p>
+    <?php include("correspondances.php"); ?>
     <?php if($arretsuivant2<=5) { ?>
     <p class="stop2"><?php echo $stops[$arretsuivant2]; ?></p>
     <?php }

@@ -26,14 +26,16 @@ if($arret >= 6){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Ligne </title>
+    <title>Ligne <?php echo $_SESSION['ligne']; ?></title>
 </head>
 <body class="stop">
     <?php if($_SESSION['arretactuel']<5){ ?>
     <p class="arret"><a class="arretlien" href="index.php"><?php echo $stops[$arret]; ?></a></p>
+    <?php include("correspondances.php"); ?>
     <?php $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; ?>    
     <?php } else { ?>
        <p class="arret"><a class="arretlien" href="finligne.php"><?php echo $stops[$arret]; ?></a></p>
+       <?php include("correspondances.php"); ?>
        <?php $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; ?>    
     <?php } ?> 
 

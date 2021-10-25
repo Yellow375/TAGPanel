@@ -72,11 +72,12 @@ a:visited{
     margin-top: 130px;
     margin-left: 240px;
     font-size: 125px;
+    margin-bottom: 0px;
 }
 
 .stop2{
     font-weight: bold;
-    margin-top: 200px;
+    margin-top: 45px;
     margin-left: 240px;
     margin-bottom: 0px;
     font-size: 125px;
@@ -84,14 +85,15 @@ a:visited{
 
 .stop3{
     margin-left: 240px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 125px;
 }
 
 .heure1{
     color: white;
-    margin-top: 7px;
-    margin-left: 20px;
+    margin-top: 3px;
+    margin-left: 30px;
     margin-bottom: 0px;
     font-size: 80px;
     font-weight: bold;
@@ -99,8 +101,8 @@ a:visited{
 
 .heure2{
     color: white;
-    margin-top: 160px;
-    margin-left: 35px;
+    margin-top: 165px;
+    margin-left: 30px;
     margin-bottom: 0px;
     font-size: 80px;
     font-weight: bold;
@@ -109,8 +111,26 @@ a:visited{
 .heure3{
     color: white;
     margin-top: 512px;
-    margin-left: 37px;
+    margin-left: 30px;
     margin-bottom: 0px;
     font-size: 80px;
     font-weight: bold;
+}
+
+.corresp0{
+    margin-left: 230px;
+}
+
+.nocorresp{
+    margin-top: 195px;
+}
+
+.imagecorresp{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.imagecorrespstop{
+    margin-left: 15px;
+    margin-top: 275px;
 }

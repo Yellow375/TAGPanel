@@ -19,6 +19,8 @@ session_start();
     } else { ?>
 
     <h1>Bonjour !</h1>
+    <h2>Ceci est une sorte de reproduction des panneaux que l'on peux trouver dans les trams et bus de Grenoble !</h2>
+    <p>Pour que le panneau fonctionne correctement, mettez votre navigateur en plein écran. </p>
     <h2>Choisissez ici une ligne et sa destination !</h2>
     <form method="post" action="">
         <label>Choisissez votre ligne : </label>
@@ -43,6 +45,6 @@ session_start();
     <?php } 
     }?>
 
-    <p>Site réalisé par Yellow375 - Version 1 du 24/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG">Github</a></p>
+    <p>Site réalisé par Yellow375 - Version 2 du 25/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG">Github</a></p>
 </body>
 </html>

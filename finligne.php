@@ -50,7 +50,7 @@ $_SESSION['arretactuel'] = 0;
         }
         ?>
     </p>
-    <p>Site réalisé par Yellow375 - Version 1 du 24/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG">Github</a></p>
+    <p>Site réalisé par Yellow375 - Version 2 du 25/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG">Github</a></p>
 
 </body>
 </html>
