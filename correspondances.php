@@ -23,7 +23,7 @@ if(($arretsuivant1 == 1 && $_SESSION['destination'] == "etiennegrappe") || ($arr
 </div>
 <?php }elseif($arretsuivant1 == 5 && $_SESSION['destination'] == "taillees"){?>
     <div class="corresp0">
-    <img src="correspondances/Ligne_B.png" alt="Ligne B" width="7%">
+    <img src="correspondances/Ligne_B.png" alt="Ligne B" width="7%" class="imagecorresp">
 </div>
 <?php }else{ ?>
 
