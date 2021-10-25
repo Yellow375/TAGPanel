@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'googlesans';
+    src: url('fonts/GoogleSans-Regular.ttf');
+}
+
+body{
+    font-family: 'googlesans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.h1{
+    margin-top: 100px;
+}

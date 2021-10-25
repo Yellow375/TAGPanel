@@ -45,6 +45,6 @@ session_start();
     <?php } 
     }?>
 
-    <p>Site réalisé par Yellow375 - Version 2 du 25/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG">Github</a></p>
+    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes faits par la <a href="https://www.tag.fr" class="acredits"> TAG </a> - Version 2 du 25/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
 </body>
 </html>
