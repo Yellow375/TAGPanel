@@ -5,8 +5,8 @@ Je me suis embêté à refaire l'affichage dans les bus et trams de la TAG à Gr
 # Comment je l'utilise sur mon site ?
 Téléchargez juste le code et uploadez-le sur votre site !
 
-# Dois-je citer l'auteur ou pas ?
-Ca serait mieux de citer mon nom pour le site même si je l'ai déjà fait sur certaines pages ;)
-
 # Je peux reprendre le code et y apporter des modifications ?
-Bien sûr ! Pensez tout de même à citer l'auteur original du code (ici moi) :)
+Bien sûr ! Cependant, apportez du crédit en citant l'auteur original (moi :) )
+
+# Y a-t-il des versions alpha / bêta ?
+Je fais des versions bêta dans la branche "dev" de ce repo. A retrouver ici : https://github.com/Yellow375/affichageTAG/tree/dev
