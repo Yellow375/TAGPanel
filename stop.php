@@ -31,13 +31,22 @@ if($arret >= 6){
 <body class="stop">
     <?php if($_SESSION['arretactuel']<5){ ?>
     <p class="arret"><a class="arretlien" href="index.php"><?php echo $stops[$arret]; ?></a></p>
-    <?php include("correspondances.php"); ?>
-    <?php $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; ?>    
-    <?php } else { ?>
+    <?php include("correspondances.php");
+    $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; 
+    $renvoikeypress = "\"index.php\"";  
+    } else { ?>
        <p class="arret"><a class="arretlien" href="finligne.php"><?php echo $stops[$arret]; ?></a></p>
-       <?php include("correspondances.php"); ?>
-       <?php $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; ?>    
-    <?php } ?> 
+       <?php include("correspondances.php");
+       $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1;
+        $renvoikeypress = "\"finligne.php\"";  
+    } ?> 
+
+    <script>
+        document.addEventListener('keypress', logKey);
+        function logKey(e) {
+            window.location.replace(<?php echo $renvoikeypress; ?>);
+        }
+    </script>
 
 </body>
 </html>

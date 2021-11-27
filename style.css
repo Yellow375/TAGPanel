@@ -7,7 +7,8 @@
 }
 
 body{
-    
+    position: fixed; 
+    overflow: hidden;
     font-family: 'sofiapro', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -15,20 +16,41 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#msgattention{
+    color: red;
+}
+
 .trajet{
-    background: url(Ligne_D.png);
+    position: relative;
+    background: url(Ligne_D.png) no-repeat center center fixed;
+    background-size: 100vw 100vh;
 }
 
 .trajetpf{
-    background: url(Ligne_D-1stop.png);
+    position: relative;
+    background: url(Ligne_D-1stop.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .trajetfin{
-    background: url(Ligne_Dfin.png);
+    position: relative;
+    background: url(Ligne_Dfin.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .stop{
     background:url(arret.png);
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 a{
@@ -51,15 +73,16 @@ a:visited{
     color: white;
     font-weight: bold;
     text-align: center;
-    margin-top: 400px;
-    font-size: 125px;
+    margin-top: 22.5%;
+    /*margin-top: 400px;*/
+    font-size: 8vw;
 }
 
 .direction{
     color: white;
-    margin-top: 60px;
-    margin-left: 330px;
-    font-size: 100px;
+    margin-top: 5vh;
+    margin-left: 30.5vh;
+    font-size: 5vw;
     font-weight: bold;
 }
 
@@ -73,60 +96,79 @@ a:visited{
 
 .stop1{
     font-weight: bold;
-    margin-top: 130px;
-    margin-left: 240px;
-    font-size: 125px;
+    margin-top: 12vh;
+    margin-left: 23vh;
+    font-size: 7vw;
     margin-bottom: 0px;
 }
 
 .stop2{
     font-weight: bold;
-    margin-top: 45px;
-    margin-left: 240px;
+    margin-top: 3vh;
+    margin-left: 23vh;
     margin-bottom: 0px;
-    font-size: 125px;
+    font-size: 7vw;
 }
 
 .stop3{
-    margin-left: 240px;
-    margin-top: 10px;
+    margin-left: 23vh;
+    /*margin-top: 0.5%;*/
     font-weight: bold;
-    font-size: 125px;
+    font-size: 7vw;
 }
 
 .heure1{
     color: white;
-    margin-top: 3px;
-    margin-left: 30px;
+    margin-top: 0.5vh;
+    margin-left: 3vh;
     margin-bottom: 0px;
-    font-size: 80px;
+    font-size: 4vw;
     font-weight: bold;
 }
 
 .heure2{
     color: white;
-    margin-top: 165px;
-    margin-left: 30px;
+    margin-top: 15.8vh;
+    margin-left: 2.8vh;
     margin-bottom: 0px;
-    font-size: 80px;
+    font-size: 4vw;
     font-weight: bold;
 }
 
 .heure3{
     color: white;
-    margin-top: 367px;
-    margin-left: 30px;
+    margin-top: 33.8vh;
+    margin-left: 3.25vh;
     margin-bottom: 0px;
-    font-size: 80px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.heurenocorresptaillees{
+    color: white;
+    margin-top: -0.5vh;
+    margin-left: 3vh;
+    margin-bottom: 0px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.heurenocorrespeg{
+    color: white;
+    margin-top: 14.8vh;
+    margin-left: 2.8vh;
+    margin-bottom: 0px;
+    font-size: 4vw;
     font-weight: bold;
 }
 
 .corresp0{
-    margin-left: 230px;
+    margin-left: 12%;
 }
 
+
 .nocorresp{
-    margin-top: 195px;
+    margin-top: 10%;
 }
 
 .imagecorresp{
@@ -135,6 +177,7 @@ a:visited{
 }
 
 .imagecorrespstop{
-    margin-left: 15px;
-    margin-top: 275px;
+    margin-left: 1vh;
+    margin-top: 17vh;
+    
 }

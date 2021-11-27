@@ -20,16 +20,12 @@ session_start();
 
     <h1>Bonjour !</h1>
     <h2>Ceci est une sorte de reproduction des panneaux que l'on peux trouver dans les trams et bus de Grenoble !</h2>
-    <p>Pour que le panneau fonctionne correctement, mettez votre navigateur en plein écran. </p>
+    <h2 id="msgattention">Attention ! <br> <br>
+        Ce panneau pourrait avoir quelques bugs si votre écran n'est pas en 16:9 ou en 1920x1080, cela est dû au fait que j'ai développé le site dans cette résolution ! <br></h2>
+    <h2>Pour que le panneau fonctionne correctement, mettez votre navigateur en plein écran. </h2>
     <h2>Choisissez ici une ligne et sa destination !</h2>
-    <form method="post" action="">
-        <label>Choisissez votre ligne : </label>
-        <select name="ligne">
-    	<option value="">--- Quelle ligne ? ---</option>
-    	<option value="D">Ligne D</option>
-	    </select>
-        <input type="submit" value="Choisir une destination !">
-    </form> <br> <br>
+
+    
 
     <?php if(isset($_POST['ligne'])){ ?>
         <form method="post" action="">    
@@ -42,9 +38,18 @@ session_start();
 	        </select>
             <input type="submit" value="Valider !">
         </form>
-    <?php } 
+    <?php }else{ ?>
+        <form method="post" action="">
+        <label>Choisissez votre ligne : </label>
+        <select name="ligne">
+        <option value="">--- Quelle ligne ? ---</option>
+        <option value="D">Ligne D</option>
+        </select>
+        <input type="submit" value="Choisir une destination !">
+        </form>
+    <?php }
     }?>
 
-    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes faits par la <a href="https://www.tag.fr" class="acredits"> TAG </a> - Version 2 du 25/10/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
+    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes faits par la <a href="https://www.tag.fr" class="acredits"> TAG </a> - Version 3 du 27/11/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
 </body>
 </html>
