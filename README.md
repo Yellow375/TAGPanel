@@ -7,3 +7,5 @@ Ici c'est la branche de développement !
 Cette branche me sert quand je ne suis pas sûr de pouvoir release la version que je développe sans l'avoir testé là où je le souhaiterais !
 Pour avoir une version "stable" redirigez-vous vers la branche "main" !
 Amusez-vous avec ce projet ;)
+
+Si vous souhaitez voir la version de développement en fontionnement, rendez-vous sur https://dev.noahyellow.me
