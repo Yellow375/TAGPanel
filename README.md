@@ -2,10 +2,11 @@
 Je me suis embêté à refaire l'affichage dans les bus et trams de la TAG à Grenoble en PHP et voilà le résultat...
 
 
-# Attention !
-Ici c'est la branche de développement !
-Cette branche me sert quand je ne suis pas sûr de pouvoir release la version que je développe sans l'avoir testé là où je le souhaiterais !
-Pour avoir une version "stable" redirigez-vous vers la branche "main" !
-Amusez-vous avec ce projet ;)
+# Comment je l'utilise sur mon site ?
+Téléchargez juste le code et uploadez-le sur votre site !
 
-Si vous souhaitez voir la version de développement en fontionnement, rendez-vous sur https://dev.noahyellow.me
+# Je peux reprendre le code et y apporter des modifications ?
+Bien sûr ! Cependant, apportez du crédit en citant l'auteur original (moi :) )
+
+# Y a-t-il des versions alpha / bêta ?
+Je fais des versions bêta dans la branche "dev" de ce repo. A retrouver ici : https://github.com/Yellow375/affichageTAG/tree/dev

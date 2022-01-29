@@ -20,13 +20,13 @@ body::-webkit-scrollbar {
     color: red;
 }
 
-.trajet{
+.trajetD{
     position: relative;
     background: url(Ligne_D.png) no-repeat center center fixed;
     background-size: 100vw 100vh;
 }
 
-.trajetpf{
+.trajetpfD{
     position: relative;
     background: url(Ligne_D-1stop.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     background-size: cover;
 }
 
-.trajetfin{
+.trajetfinD{
     position: relative;
     background: url(Ligne_Dfin.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -44,13 +44,25 @@ body::-webkit-scrollbar {
     background-size: cover;
 }
 
-.stop{
-    background:url(arret.png);
+.trajetB{
     position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(Ligne_B.png) no-repeat center center fixed;
+    background-size: 100vw 100vh;
+}
+
+.trajetpfB{
+    position: relative;
+    background: url(Ligne_B-1stop.png) no-repeat center center fixed;
+}
+
+.trajetfinB{
+    position: relative;
+    background: url(Ligne_Bfin.png) no-repeat center center fixed;
+}
+
+.stop{
+    background:url(arret.png) no-repeat center center fixed;
+    position: relative;
 }
 
 a{
@@ -78,6 +90,16 @@ a:visited{
     font-size: 8vw;
 }
 
+.arrethd{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 22.5%;
+    /*margin-top: 400px;*/
+    font-size: 8vw;
+    margin-bottom: 0px;
+}
+
 .direction{
     color: white;
     margin-top: 5vh;
@@ -95,89 +117,109 @@ a:visited{
 }
 
 .stop1{
+    position: fixed;
     font-weight: bold;
-    margin-top: 12vh;
-    margin-left: 23vh;
+    top: 16vh;
+    left: 23vh;
     font-size: 7vw;
-    margin-bottom: 0px;
+}
+
+.stop1overflow{
+    position: fixed;
+    font-weight: bold;
+    top: 17vh;
+    left: 23vh;
+    font-size: 6.5vw;
+}
+
+.stop2overflow{
+    position: fixed;
+    font-weight: bold;
+    top: 49vh;
+    left: 23vh;
+    font-size: 6.5vw;
+}
+
+.stop3overflow{
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    bottom: 10vh;
+    font-size: 6.5vw;
+}
+
+.stop1hd{
+    position: fixed;
+    font-weight: bold;
+    top: 23vh;
+    margin-left: 23vh;
+    font-size: 4.7vw;
+    margin-bottom: 2vh;
+}
+
+.stop2hd {
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    top: 55vh;
+    font-size: 4.7vw;
+    margin-bottom: 1vh;
+}
+
+.stop3hd{
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    font-size: 4.7vw;
+    bottom: 11vh;
 }
 
 .stop2{
+    position: fixed;
     font-weight: bold;
-    margin-top: 3vh;
-    margin-left: 23vh;
-    margin-bottom: 0px;
+    top: 47.5vh;
+    left: 23vh;
     font-size: 7vw;
 }
 
 .stop3{
-    margin-left: 23vh;
-    /*margin-top: 0.5%;*/
+    position: fixed;
+    bottom: 10vh;
+    left: 23vh;
     font-weight: bold;
     font-size: 7vw;
 }
 
-.heure1{
+.heure {
     color: white;
-    margin-top: 0.5vh;
-    margin-left: 3vh;
-    margin-bottom: 0px;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-.heure2{
-    color: white;
-    margin-top: 15.8vh;
-    margin-left: 2.8vh;
-    margin-bottom: 0px;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-.heure3{
-    color: white;
-    margin-top: 33.8vh;
-    margin-left: 3.25vh;
-    margin-bottom: 0px;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-.heurenocorresptaillees{
-    color: white;
-    margin-top: -0.5vh;
-    margin-left: 3vh;
-    margin-bottom: 0px;
-    font-size: 4vw;
-    font-weight: bold;
-}
-
-.heurenocorrespeg{
-    color: white;
-    margin-top: 14.8vh;
-    margin-left: 2.8vh;
-    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0.5vh;
+    left: 2vw;
     font-size: 4vw;
     font-weight: bold;
 }
 
 .corresp0{
-    margin-left: 12%;
+    position: fixed;
+    left: 22vh;
+    top: 44vh;
 }
 
 
 .nocorresp{
-    margin-top: 10%;
+    margin-top: 9.5%;
 }
 
 .imagecorresp{
+    height: 117.766px;
+    width: 117.766px;
     margin-top: 25px;
     margin-left: 15px;
 }
 
 .imagecorrespstop{
-    margin-left: 1vh;
-    margin-top: 17vh;
+    position: fixed;
+    bottom: 0.5vh;
+    width: 90%;
     
 }

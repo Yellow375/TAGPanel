@@ -5,7 +5,12 @@ if($_SESSION['destination']=="etiennegrappe"){
     $dest = "Étienne Grappe";
 } elseif($_SESSION['destination']=="taillees"){
     $dest = "Les Taillées - Universités";
-} else {
+} elseif($_SESSION['destination']=="oxford"){
+    $dest = "GRENOBLE Oxford";
+}elseif($_SESSION['destination']=="pds"){
+    $dest = "GIÈRES Plaine des Sports";
+}
+ else {
     $dest = "on a un problème là...";
 }
 } else {
@@ -13,6 +18,7 @@ if($_SESSION['destination']=="etiennegrappe"){
 }
 
 $_SESSION['arretactuel'] = 0;
+$_SESSION['stopnum1'] = 0;
 
 ?>
 
@@ -34,6 +40,10 @@ $_SESSION['arretactuel'] = 0;
         
     } elseif($_SESSION['destination'] == "taillees") {
         $_SESSION['destination'] = "etiennegrappe";
+    } elseif($_SESSION['destination'] == "oxford") {
+        $_SESSION['destination'] = "pds";
+    } elseif($_SESSION['destination'] == "pds") {
+        $_SESSION['destination'] = "oxford";
     } else {
         $_SESSION['destination'] = "oups";
     }
@@ -50,7 +60,7 @@ $_SESSION['arretactuel'] = 0;
         }
         ?>
     </p>
-    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes faits par la <a href="https://www.tag.fr" class="acredits"> TAG </a> - Version Beta 3 du 20/11/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
+    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes faits par la <a href="https://www.tag.fr" class="acredits"> TAG </a> - Version 3 du 27/11/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
 
 </body>
 </html>
