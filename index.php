@@ -11,49 +11,25 @@ if(isset($_SESSION['ligne']) && isset($_SESSION['destination'])){
     
 
 
+
 $arretsuivant = 0;
 
-if($_SESSION['destination'] == "taillees"){
-    $stops=array("Etienne Grappe", "Parc Jo Blanchon", "Edouard Vaillant", "Maison Communale", "Neyrpic - Belledonne", "Les Taillées - Universités");
-} elseif($_SESSION['destination'] == "etiennegrappe"){
-    $stops=array("Les Taillées - Universités", "Neyrpic - Belledonne", "Maison Communale", "Edouard Vaillant", "Parc Jo Blanchon", "Etienne Grappe");
-} else {
-    $stops=array("", "Pas de destination définie...");
-}
-if(isset($_SESSION['arretactuel'])){
     $arretsuivant1 = $arretsuivant + $_SESSION['arretactuel'];
     $arretsuivant2 = $arretsuivant + $_SESSION['arretactuel'] + 1;
     $arretsuivant3 = $arretsuivant + $_SESSION['arretactuel'] + 2;
-} else {
-    $_SESSION['arretactuel'] = 0;
-    header('Location: stop.php');
-}
+
 
 } else {
     header('Location: choix.php');
 }
 
-$heure = date('H:i');
+include("includes/lignes.php");
 
+include("includes/classgest.php");
 
-if($_SESSION['destination'] == "taillees" && $_SESSION['arretactuel'] == 1) {
-    $classbody = "\"trajet\"";
-    $classheure = "\"heurenocorresptaillees\"";
-} elseif($_SESSION['destination'] == "etiennegrappe" && $_SESSION['arretactuel'] == 4) {
-    $classbody = "\"trajetpf\"";
-    $classheure = "\"heurenocorrespeg\"";
-} elseif($arretsuivant1==5){
-    $classbody = "\"trajetfin\"";
-    $classheure = "\"heure3\"";
-} elseif($arretsuivant2==5) {
-    $classbody = "\"trajetpf\"";
-    $classheure = "\"heure2\"";
-} else {
-    $classbody = "\"trajet\"";
-    $classheure = "\"heure1\"";
-}
+include("includes/classstops.php");
 
-
+$_SESSION['stopnum1'] = $arretsuivant1;
 
 ?>
 
@@ -66,23 +42,31 @@ if($_SESSION['destination'] == "taillees" && $_SESSION['arretactuel'] == 1) {
     <title>Ligne <?php echo "".$_SESSION['ligne'].""; ?></title>
 </head>
 <body class=<?php echo $classbody; ?> onload="startTime()">
-    <p class="direction"><?php echo $stops[5];?></p>
-    <p class="stop1"><a href="stop.php" class="stoplien"><?php echo $stops[$arretsuivant1]; ?></a></p>
-    <?php include("correspondances.php"); ?>
-    <?php if($arretsuivant2<=5) { ?>
-    <p class="stop2"><?php echo $stops[$arretsuivant2]; ?></p>
+    <p class="direction"><?php echo $direction;?></p>
+    <p class=<?php echo $classstop1; ?>><a href="stop.php" class="stoplien"><?php echo $stops[$arretsuivant1]; ?></a></p>
+    <?php if($_SESSION['destination'] == "oxford"){
+        include("includes/correspondances_LB_oxford.php");
+    }elseif($_SESSION['destination'] == "pds"){
+        include("includes/correspondances_LB_pds.php");
+    } elseif($_SESSION['ligne'] == "D"){
+        include("includes/correspondances_LD.php");
+    }
+    ?>
+    <?php if($arretsuivant2<=$nbstops) { ?>
+    <p class=<?php echo $classstop2; ?>><?php echo $stops[$arretsuivant2]; ?></p>
     <?php }
-    if($arretsuivant3 <= 5){ ?>
-    <div class="stop3"><?php echo $stops[$arretsuivant3]; ?></div>
+    if($arretsuivant3 <= $nbstops){ ?>
+    <div class=<?php echo $classstop3; ?>><?php echo $stops[$arretsuivant3]; ?></div>
     <?php } ?>
 
 
-<div id="txt" class=<?php echo $classheure; ?>></div>
+<div id="txt" class="heure"></div>
 
 <script>
 function startTime() {
   const today = new Date();
   let h = today.getHours();
+  if (h < 10) {h = "0"+h};
   let m = today.getMinutes();
   m = checkTime(m);
   document.getElementById('txt').innerHTML =  h + ":" + m;

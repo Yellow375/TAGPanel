@@ -3,20 +3,16 @@ session_start();
 
 if(isset($_SESSION['ligne']) && isset($_SESSION['destination'])){
 $arret = $_SESSION['arretactuel'];
-if($_SESSION['destination'] == "taillees"){
-    $stops=array("Étienne Grappe", "Parc Jo Blanchon", "Édouard Vaillant", "Maison Communale", "Neyrpic - Belledonne", "Les Taillées - Universités");
-} elseif($_SESSION['destination'] == "etiennegrappe"){
-    $stops=array("Les Taillées - Universités", "Neyrpic - Belledonne", "Maison Communale", "Édouard Vaillant", "Parc Jo Blanchon", "Étienne Grappe");
-} else {
-    $stops=array("", "Pas de destination définie...");
-}
+include("includes/lignes.php");
 }else{
     header('Location: choix.php');
 }
 
-if($arret >= 6){
+if($arret > $nbstops){
     header('Location: finligne.php');
 }
+
+$arretsuivant1 = $_SESSION['stopnum1'];
 
 ?>
 <!DOCTYPE html>
@@ -29,16 +25,32 @@ if($arret >= 6){
     <title>Ligne <?php echo $_SESSION['ligne']; ?></title>
 </head>
 <body class="stop">
-    <?php if($_SESSION['arretactuel']<5){ ?>
-    <p class="arret"><a class="arretlien" href="index.php"><?php echo $stops[$arret]; ?></a></p>
-    <?php include("correspondances.php");
+    <?php if($_SESSION['arretactuel']<$nbstops){ 
+        ?>
+            <p class="arret"><a class="arretlien" href="index.php"><?php echo $stops[$arret]; ?></a></p>
+    <?php
+    if($_SESSION['destination'] == "oxford"){
+    include("includes/correspondances_LB_oxford_stop.php");
+    }if($_SESSION['destination'] == "pds"){
+        include("includes/correspondances_LB_pds_stop.php");
+    } elseif($_SESSION['ligne'] == "D"){
+        include("includes/correspondances_LD_stop.php");
+    }
     $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; 
     $renvoikeypress = "\"index.php\"";  
+    $arretsuivant1 = $arretsuivant1 + 1;
     } else { ?>
        <p class="arret"><a class="arretlien" href="finligne.php"><?php echo $stops[$arret]; ?></a></p>
-       <?php include("correspondances.php");
+       <?php if($_SESSION['destination'] == "oxford"){
+    include("includes/correspondances_LB_oxford_stop.php");
+    }if($_SESSION['destination'] == "pds"){
+        include("includes/correspondances_LB_pds_stop.php");
+    } elseif($_SESSION['ligne'] == "D"){
+        include("includes/correspondances_LD_stop.php");
+    }
        $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1;
         $renvoikeypress = "\"finligne.php\"";  
+        $arretsuivant1 = $arretsuivant1 + 1;
     } ?> 
 
     <script>

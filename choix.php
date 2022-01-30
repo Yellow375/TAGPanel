@@ -15,7 +15,9 @@ session_start();
     <?php
     if(isset($_SESSION['ligne']) && isset($_POST['destination'])) {
         $_SESSION['destination'] = $_POST['destination'];
-        header('Location: index.php');
+        $_SESSION['arretactuel'] = 0;
+        $_SESSION['stopnum1'] = 0;
+        header('Location: stop.php');
     } else { ?>
 
     <h1>Bonjour !</h1>
@@ -29,12 +31,14 @@ session_start();
 
     <?php if(isset($_POST['ligne'])){ ?>
         <form method="post" action="">    
-            <?php $_SESSION['ligne'] = $_POST['ligne']; ?>
+            <?php $_SESSION['ligne'] = $_POST['ligne'];
+            include("includes/lignesdest.php");
+            ?>
             <label>Choisissez maintenant une destination : </label>
             <select name="destination">
                 <option value="">--- Quelle destination ? ---</option>
-    	        <option value="taillees">Les Taillées - Universitées</option>
-    	        <option value="etiennegrappe">Étienne Grappe</option>
+    	        <?php echo $dest1;
+                echo $dest2; ?>
 	        </select>
             <input type="submit" value="Valider !">
         </form>
@@ -44,12 +48,13 @@ session_start();
         <select name="ligne">
         <option value="">--- Quelle ligne ? ---</option>
         <option value="D">Ligne D</option>
+        <option value="B">Ligne B</option>
         </select>
         <input type="submit" value="Choisir une destination !">
         </form>
     <?php }
     }?>
 
-    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes faits par la <a href="https://www.tag.fr" class="acredits"> TAG </a> - Version 3 du 27/11/2021 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
+    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes TAG et Parking Relais créés par la <a href="https://www.tag.fr" class="acredits"> TAG </a>, Logo Cars Région créé par <a href="https://carsisere.auvergnerhonealpes.fr/" class="acredits">Cars Région</a> et Logo M Vélo+ créé par le <a href="https://www.veloplus-m.fr/" class="acredits">SMMAG</a> - Version Beta 4 du 30/01/2022 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
 </body>
 </html>
