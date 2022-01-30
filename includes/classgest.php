@@ -9,7 +9,7 @@
 } elseif($arretsuivant1==$nbstops && $_SESSION['ligne'] == "D") {
     $classbody = "\"trajetfinD\"";
 } elseif($arretsuivant2==$nbstops && $_SESSION['ligne'] == "D") {
-    $classbody = "\"trajetfinD\"";
+    $classbody = "\"trajetpfD\"";
 } else{
     $classbody = "\"trajetD\"";
 }

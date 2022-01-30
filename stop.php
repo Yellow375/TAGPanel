@@ -34,7 +34,7 @@ $arretsuivant1 = $_SESSION['stopnum1'];
     }if($_SESSION['destination'] == "pds"){
         include("includes/correspondances_LB_pds_stop.php");
     } elseif($_SESSION['ligne'] == "D"){
-        include("includes/correspondances_LD.php");
+        include("includes/correspondances_LD_stop.php");
     }
     $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1; 
     $renvoikeypress = "\"index.php\"";  
@@ -46,7 +46,7 @@ $arretsuivant1 = $_SESSION['stopnum1'];
     }if($_SESSION['destination'] == "pds"){
         include("includes/correspondances_LB_pds_stop.php");
     } elseif($_SESSION['ligne'] == "D"){
-        include("includes/correspondances_LD.php");
+        include("includes/correspondances_LD_stop.php");
     }
        $_SESSION['arretactuel'] = $_SESSION['arretactuel'] + 1;
         $renvoikeypress = "\"finligne.php\"";  

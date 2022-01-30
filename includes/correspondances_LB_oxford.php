@@ -1,9 +1,10 @@
 <?php
 if(isset($arretsuivant1)){
-    /*if($arretsuivant1 == "Marie-Louise Paris – CEA" || $arretsuivant1 == "Cité Internationale"){?>
+    if($arretsuivant1 == 19 || $arretsuivant1 == 20){?>
+    <div class="corresp0">
         <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
-    <?php }*/
-    if($arretsuivant1 == 21){ ?>
+    </div>
+    <?php }elseif($arretsuivant1 == 21){ ?>
         <div class="corresp0">
             <img src="correspondances/Ligne_C6.png" alt="Ligne C6" class="imagecorresp">
             <img src="correspondances/Ligne_22.png" alt="Ligne 22" class="imagecorresp">
@@ -20,11 +21,17 @@ if(isset($arretsuivant1)){
         <img src="correspondances/Ligne_A.png" alt="Ligne A" class="imagecorresp"> 
         <img src="correspondances/Ligne_C1.png" alt="Ligne C1" class="imagecorresp"> 
         <img src="correspondances/Ligne_26.png" alt="Ligne 26" class="imagecorresp">
+        <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
+        <img src="correspondances/AM.png" alt="Agence de Mobilité" class="imagecorresp"> 
+        <img src="correspondances/SNCF.png" alt="TER" class="imagecorresp">
+        <img src="correspondances/veloplus.png" alt="M Vélo+" class="imagecorresp">
     </div>
     <?php }elseif($arretsuivant1 == 15){ ?>
         <div class="corresp0">
             <img src="correspondances/Ligne_A.png" alt="Ligne A" class="imagecorresp"> 
             <img src="correspondances/Ligne_E.png" alt="Ligne E" class="imagecorresp"> 
+            <img src="correspondances/Ligne_26.png" alt="Ligne 26" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
             <img src="correspondances/AM.png" alt="Agence de Mobilité" class="imagecorresp"> 
         </div>
     <?php }elseif($arretsuivant1 == 14){ ?>
@@ -33,7 +40,8 @@ if(isset($arretsuivant1)){
             <img src="correspondances/Ligne_C1.png" alt="Ligne C1" class="imagecorresp"> 
             <img src="correspondances/Ligne_C3.png" alt="Ligne C3" class="imagecorresp"> 
             <img src="correspondances/Ligne_C4.png" alt="Ligne C4" class="imagecorresp">
-            <img src="correspondances/Ligne_40.png" alt="Ligne 40" class="imagecorresp"> 
+            <img src="correspondances/Ligne_40.png" alt="Ligne 40" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp"> 
         </div>
     <?php }elseif($arretsuivant1 == 13){ ?>
         <div class="corresp0">
@@ -46,11 +54,14 @@ if(isset($arretsuivant1)){
     <?php }elseif($arretsuivant1 == 9){ ?>
         <div class="corresp0">
             <img src="correspondances/Ligne_13.png" alt="Ligne 13" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
         </div>
     <?php }elseif($arretsuivant1 == 7){ ?>
         <div class="corresp0">
             <img src="correspondances/Ligne_41.png" alt="Ligne 41" class="imagecorresp"> 
             <img src="correspondances/Ligne_42.png" alt="Ligne 42" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
+            <img src="correspondances/parkingrelais.png" alt="Parking Relais" class="imagecorresp">
         </div>
     <?php }elseif($arretsuivant1 == 6){ ?>
         <div class="corresp0">
@@ -66,16 +77,20 @@ if(isset($arretsuivant1)){
             <img src="correspondances/Ligne_C5.png" alt="Ligne C5" class="imagecorresp">
             <img src="correspondances/Ligne_C7.png" alt="Ligne C7" class="imagecorresp">
             <img src="correspondances/Ligne_23.png" alt="Ligne 23" class="imagecorresp">
+            <img src="correspondances/veloplus.png" alt="M Vélo+" class="imagecorresp">
         </div>
     <?php }elseif($arretsuivant1 == 3){ ?>
         <div class="corresp0">
             <img src="correspondances/Ligne_C.png" alt="Ligne C" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
         </div>
     <?php }elseif($arretsuivant1 == 1){ ?>
         <div class="corresp0">
             <img src="correspondances/Ligne_14.png" alt="Ligne 14" class="imagecorresp">
             <img src="correspondances/Ligne_23.png" alt="Ligne 23" class="imagecorresp">
             <img src="correspondances/Ligne_43.png" alt="Ligne 43" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Régions" class="imagecorresp">
+            <img src="correspondances/SNCF.png" alt="TER" class="imagecorresp">
         </div>
     <?php } else { ?>
 <div class="nocorresp"></div>

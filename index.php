@@ -66,6 +66,7 @@ $_SESSION['stopnum1'] = $arretsuivant1;
 function startTime() {
   const today = new Date();
   let h = today.getHours();
+  if (h < 10) {h = "0"+h};
   let m = today.getMinutes();
   m = checkTime(m);
   document.getElementById('txt').innerHTML =  h + ":" + m;
