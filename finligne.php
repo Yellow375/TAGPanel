@@ -7,10 +7,21 @@ if($_SESSION['destination']=="etiennegrappe"){
     $dest = "Les Taillées - Universités";
 } elseif($_SESSION['destination']=="oxford"){
     $dest = "GRENOBLE Oxford";
-}elseif($_SESSION['destination']=="pds"){
+} elseif($_SESSION['destination']=="pds"){
     $dest = "GIÈRES Plaine des Sports";
-}
- else {
+} elseif($_SESSION['destination']=="condillac"){
+    $dest = "Condillac - Universités";
+} elseif($_SESSION['destination']=="pds"){
+    $dest = "Le Prisme";
+} elseif($_SESSION['destination']=="poya"){
+    $dest = "FONTAINE La Poya";
+} elseif($_SESSION['destination']=="etoile"){
+    $dest = "PONT-DE-CLAIX L'Étoile";
+} elseif($_SESSION['destination']=="louisemichel"){
+    $dest = "Louise Michel";
+} elseif($_SESSION['destination']=="palluel"){
+    $dest = "Palluel";
+} else {
     $dest = "on a un problème là...";
 }
 } else {
@@ -44,9 +55,21 @@ $_SESSION['stopnum1'] = 0;
         $_SESSION['destination'] = "pds";
     } elseif($_SESSION['destination'] == "pds") {
         $_SESSION['destination'] = "oxford";
+    } elseif($_SESSION['destination'] == "prisme") {
+        $_SESSION['destination'] = "condillac";
+    } elseif($_SESSION['destination'] == "condillac") {
+        $_SESSION['destination'] = "prisme";
+    } elseif($_SESSION['destination'] == "poya") {
+        $_SESSION['destination'] = "etoile";
+    } elseif($_SESSION['destination'] == "etoile") {
+        $_SESSION['destination'] = "poya";
+    } elseif($_SESSION['destination'] == "palluel") {
+        $_SESSION['destination'] = "louisemichel";
+    } elseif($_SESSION['destination'] == "louisemichel") {
+        $_SESSION['destination'] = "palluel";
     } else {
         $_SESSION['destination'] = "oups";
-    }
+    } 
     ?>
 
     <p>

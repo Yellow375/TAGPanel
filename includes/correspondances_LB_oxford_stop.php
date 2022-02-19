@@ -9,6 +9,7 @@ if(isset($arretsuivant1)){
             <img src="correspondances/Ligne_C6.png" alt="Ligne C6" class="imagecorresp">
             <img src="correspondances/Ligne_22.png" alt="Ligne 22" class="imagecorresp">
             <img src="correspondances/Ligne_54.png" alt="Ligne 54" class="imagecorresp">
+            <img src="correspondances/Ligne_CR.png" alt="Cars Région" class="imagecorresp">
         </div>
         <?php } elseif($arretsuivant1 == 18){ ?>
     <div class="imagecorrespstop">

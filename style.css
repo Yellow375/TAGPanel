@@ -44,6 +44,22 @@ body::-webkit-scrollbar {
     background-size: cover;
 }
 
+.trajetA{
+    position: relative;
+    background: url(Ligne_A.png) no-repeat center center fixed;
+    background-size: 100vw 100vh;
+}
+
+.trajetpfA{
+    position: relative;
+    background: url(Ligne_A-1stop.png) no-repeat center center fixed;
+}
+
+.trajetfinA{
+    position: relative;
+    background: url(Ligne_Afin.png) no-repeat center center fixed;
+}
+
 .trajetB{
     position: relative;
     background: url(Ligne_B.png) no-repeat center center fixed;
@@ -58,6 +74,38 @@ body::-webkit-scrollbar {
 .trajetfinB{
     position: relative;
     background: url(Ligne_Bfin.png) no-repeat center center fixed;
+}
+
+.trajetC{
+    position: relative;
+    background: url(Ligne_C.png) no-repeat center center fixed;
+    background-size: 100vw 100vh;
+}
+
+.trajetpfC{
+    position: relative;
+    background: url(Ligne_C-1stop.png) no-repeat center center fixed;
+}
+
+.trajetfinC{
+    position: relative;
+    background: url(Ligne_Cfin.png) no-repeat center center fixed;
+}
+
+.trajetE{
+    position: relative;
+    background: url(Ligne_E.png) no-repeat center center fixed;
+    background-size: 100vw 100vh;
+}
+
+.trajetpfE{
+    position: relative;
+    background: url(Ligne_E-1stop.png) no-repeat center center fixed;
+}
+
+.trajetfinE{
+    position: relative;
+    background: url(Ligne_Efin.png) no-repeat center center fixed;
 }
 
 .stop{
@@ -124,7 +172,23 @@ a:visited{
     font-size: 7vw;
 }
 
-.stop1overflow{
+.stop2{
+    position: fixed;
+    font-weight: bold;
+    top: 47.5vh;
+    left: 23vh;
+    font-size: 7vw;
+}
+
+.stop3{
+    position: fixed;
+    bottom: 10vh;
+    left: 23vh;
+    font-weight: bold;
+    font-size: 7vw;
+}
+
+.stop1ovf{
     position: fixed;
     font-weight: bold;
     top: 17vh;
@@ -132,7 +196,7 @@ a:visited{
     font-size: 6.5vw;
 }
 
-.stop2overflow{
+.stop2ovf{
     position: fixed;
     font-weight: bold;
     top: 49vh;
@@ -140,7 +204,7 @@ a:visited{
     font-size: 6.5vw;
 }
 
-.stop3overflow{
+.stop3ovf{
     position: fixed;
     font-weight: bold;
     left: 23vh;
@@ -174,20 +238,78 @@ a:visited{
     bottom: 11vh;
 }
 
-.stop2{
+.stop1fhdv {
     position: fixed;
     font-weight: bold;
-    top: 47.5vh;
-    left: 23vh;
-    font-size: 7vw;
+    top: 20vh;
+    margin-left: 23vh;
+    font-size: 5.7vw;
+    margin-bottom: 2vh;
 }
 
-.stop3{
+.stop2fhdv {
     position: fixed;
-    bottom: 10vh;
-    left: 23vh;
     font-weight: bold;
-    font-size: 7vw;
+    left: 23vh;
+    top: 52vh;
+    font-size: 5.7vw;
+    margin-bottom: 1vh;
+}
+
+.stop3fhdv {
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    font-size: 5.7vw;
+    bottom: 11vh;
+}
+
+.stop1sp {
+    position: fixed;
+    font-weight: bold;
+    top: 19vh;
+    margin-left: 23vh;
+    font-size: 6vw;
+}
+
+.stop2sp {
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    top: 51vh;
+    font-size: 6vw;
+}
+
+.stop3sp {
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    font-size: 6vw;
+    bottom: 11vh;
+}
+
+.stop1smlvhdv {
+    position: fixed;
+    font-weight: bold;
+    top: 22vh;
+    margin-left: 23vh;
+    font-size: 5.1vw;
+}
+
+.stop2smlvhdv {
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    top: 54vh;
+    font-size: 5.1vw;
+}
+
+.stop3smlvhdv {
+    position: fixed;
+    font-weight: bold;
+    left: 23vh;
+    font-size: 5.1vw;
+    bottom: 11vh;
 }
 
 .heure {

@@ -44,15 +44,8 @@ $_SESSION['stopnum1'] = $arretsuivant1;
 <body class=<?php echo $classbody; ?> onload="startTime()">
     <p class="direction"><?php echo $direction;?></p>
     <p class=<?php echo $classstop1; ?>><a href="stop.php" class="stoplien"><?php echo $stops[$arretsuivant1]; ?></a></p>
-    <?php if($_SESSION['destination'] == "oxford"){
-        include("includes/correspondances_LB_oxford.php");
-    }elseif($_SESSION['destination'] == "pds"){
-        include("includes/correspondances_LB_pds.php");
-    } elseif($_SESSION['ligne'] == "D"){
-        include("includes/correspondances_LD.php");
-    }
-    ?>
-    <?php if($arretsuivant2<=$nbstops) { ?>
+    <?php include("includes/correspgest.php"); 
+    if($arretsuivant2<=$nbstops) { ?>
     <p class=<?php echo $classstop2; ?>><?php echo $stops[$arretsuivant2]; ?></p>
     <?php }
     if($arretsuivant3 <= $nbstops){ ?>

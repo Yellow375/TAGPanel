@@ -47,14 +47,17 @@ session_start();
         <label>Choisissez votre ligne : </label>
         <select name="ligne">
         <option value="">--- Quelle ligne ? ---</option>
-        <option value="D">Ligne D</option>
+        <option value="A">Ligne A</option>
         <option value="B">Ligne B</option>
+        <option value="C">Ligne C</option>
+        <option value="D">Ligne D</option>
+        <option value="E">Ligne E</option>
         </select>
         <input type="submit" value="Choisir une destination !">
         </form>
     <?php }
     }?>
 
-    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes TAG et Parking Relais créés par la <a href="https://www.tag.fr" class="acredits"> TAG </a>, Logo Cars Région créé par <a href="https://carsisere.auvergnerhonealpes.fr/" class="acredits">Cars Région</a> et Logo M Vélo+ créé par le <a href="https://www.veloplus-m.fr/" class="acredits">SMMAG</a> - Version Beta 4 du 30/01/2022 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
+    <p>Site réalisé par Yellow375 - Design général du panneau par Yellow375 - Logos des lignes TAG et Parking Relais créés par la <a href="https://www.tag.fr" class="acredits"> TAG </a>, Logo Cars Région créé par <a href="https://carsisere.auvergnerhonealpes.fr/" class="acredits">Cars Région</a> et Logo M Vélo+ créé par le <a href="https://www.veloplus-m.fr/" class="acredits">SMMAG</a> - Version Beta 5 du 05/02/2022 - Code source disponible sur <a href="https://github.com/Yellow375/affichageTAG" class="acredits">Github</a></p>
 </body>
 </html>
