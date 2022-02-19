@@ -8,5 +8,9 @@ Téléchargez juste le code et uploadez-le sur votre site !
 # Je peux reprendre le code et y apporter des modifications ?
 Bien sûr ! Cependant, apportez du crédit en citant l'auteur original (moi :) )
 
-# Y a-t-il des versions alpha / bêta ?
-Je fais des versions bêta dans la branche "dev" de ce repo. A retrouver ici : https://github.com/Yellow375/affichageTAG/tree/dev
+# Un problème ?
+Rendez-vous dans l'onglet Issues pour en parler !
+
+# Besoin de me contacter par mail ?
+
+Envoyez alors un mail à coucou@noahyellow.me !
